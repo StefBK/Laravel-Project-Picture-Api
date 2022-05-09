@@ -4,6 +4,10 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+// Inclure la facade "Schema"
+use Illuminate\Support\Facades\Schema;
+
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +27,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Inclure la facade "Schema"
+        Schema::defaultStringLength(191);
         //
     }
 }
