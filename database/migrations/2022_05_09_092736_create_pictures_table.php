@@ -15,6 +15,11 @@ class CreatePicturesTable extends Migration
     {
         Schema::create('pictures', function (Blueprint $table) {
             $table->id();
+            $table->string('author',55);
+            $table->string('title',255);
+            $table->text('description');
+            $table->string('url',255);
+            $table->integer('likes');
             $table->timestamps();
         });
     }
