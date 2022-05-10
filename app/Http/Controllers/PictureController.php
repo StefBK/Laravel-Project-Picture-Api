@@ -39,7 +39,7 @@ class PictureController extends Controller
      */
     public function show(Picture $picture)
     {
-        //
+        return $picture;
     }
 
     /**
