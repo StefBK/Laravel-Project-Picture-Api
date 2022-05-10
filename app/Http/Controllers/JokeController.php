@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Picture;
+use App\Models\Joke;
 use Illuminate\Http\Request;
 
-class PictureController extends Controller
+class JokeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class PictureController extends Controller
      */
     public function index()
     {
-        return Picture::all();
+        return Joke::all();
     }
 
     /**
@@ -31,10 +31,10 @@ class PictureController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Picture  $picture
+     * @param  \App\Models\Joke  $joke
      * @return \Illuminate\Http\Response
      */
-    public function show(Picture $picture)
+    public function show(Joke $joke)
     {
         //
     }
@@ -43,10 +43,10 @@ class PictureController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Picture  $picture
+     * @param  \App\Models\Joke  $joke
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Picture $picture)
+    public function update(Request $request, Joke $joke)
     {
         //
     }
@@ -54,10 +54,10 @@ class PictureController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Picture  $picture
+     * @param  \App\Models\Joke  $joke
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Picture $picture)
+    public function destroy(Joke $joke)
     {
         //
     }
