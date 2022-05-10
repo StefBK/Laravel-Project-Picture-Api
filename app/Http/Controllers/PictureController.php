@@ -25,7 +25,10 @@ class PictureController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if(Picture::create($request->all())){
+            return 'New Picture added successfully!';
+        }
+        //return $request;
     }
 
     /**
@@ -48,7 +51,10 @@ class PictureController extends Controller
      */
     public function update(Request $request, Picture $picture)
     {
-        //
+        if($picture->update($request->all())){
+            return 'Picture updated successfully!';
+        }
+        //return $request;
     }
 
     /**
@@ -59,6 +65,8 @@ class PictureController extends Controller
      */
     public function destroy(Picture $picture)
     {
-        //
+        if($picture->delete()){
+            return 'Picture deleted successfully!';
+        }
     }
 }
