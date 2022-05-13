@@ -13,6 +13,6 @@ class JokeTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Joke::factory(10)->create();
+        \App\Models\Joke::factory(200)->create();
     }
 }
